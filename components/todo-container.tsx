@@ -17,13 +17,13 @@ const TodoContainer = async () => {
   const todos = data ?? [];
 
   return (
-    <main>
+    <div>
       <TodoInput />
       <TodoList todos={todos} />
       <div className='lg:hidden mt-4 flex justify-center bg-white dark:bg-dark-bg transition-colors duration-[500ms] rounded-[5px] w-full pt-[15px] pb-[19px] shadow-list-shadow-light dark:shadow-input-shadow-dark'>
         <TodoFilters />
       </div>
-    </main>
+    </div>
   )
 }
 

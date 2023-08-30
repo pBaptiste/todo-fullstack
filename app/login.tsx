@@ -25,6 +25,7 @@ export default function Login() {
             <div className='flex flex-col gap-1 border border-[#E3E4F1] dark:text-white rounded-[5px] px-3 py-2 mb-5 w-full'>
                 <label htmlFor="email" className='text-light-primary dark:text-dark-primary font-bold text-sm'>Email</label>
                 <input name="email"
+                    id='email'
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     className='outline-none bg-transparent font-normal caret-[#3A7CFD]' />
@@ -33,6 +34,7 @@ export default function Login() {
             <div className='flex flex-col gap-1 border border-[#E3E4F1] dark:text-white  rounded-[5px] px-3 py-2 mb-5 w-full'>
                 <label htmlFor="password" className='text-light-primary dark:text-dark-primary font-bold text-sm'>Password</label>
                 <input
+                    id="password"
                     type="password"
                     name="password"
                     onChange={(e) => setPassword(e.target.value)}
